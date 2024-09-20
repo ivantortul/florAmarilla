@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flor amarilla</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  </head>
+  <body>
+    <script>
+      function setup() {
+        createCanvas(400, 400);
+        background(255);
+        translate(width / 2, height / 2);
+        noStroke();
+        fill(255, 204, 0);  // Color amarillo para los pétalos
+        for (let i = 0; i < 6; i++) {
+          ellipse(0, 60, 80, 160);  // Dibuja el pétalo
+          rotate(PI / 3);  // Rota 60 grados
+        }
+        fill(255, 128, 0);  // Color naranja para el centro
+        ellipse(0, 0, 80, 80);  // Dibuja el centro de la flor
+      }
+    </script>
+  </body>
+</html>
